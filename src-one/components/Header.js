@@ -4,26 +4,31 @@
 import React, { useState } from 'react';
 import '../styles/Header.css';
 
+import VideoCallIcon from '@material-ui/icons/VideoCall';
 import MenuIcon from '@material-ui/icons/Menu';
-import { headerLogoImage, headerAvatarImage } from '../links/Header_Links';
 
 import SearchIcon from '@material-ui/icons/Search';
-import VideoCallIcon from '@material-ui/icons/VideoCall';
-
 import AppsIcon from '@material-ui/icons/Apps';
-import NotificationsIcon from '@material-ui/icons/Notifications';
 
-import { Avatar } from '@material-ui/core';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import Avatar from '@material-ui/core/Avatar';
+
+import { headerYouTubeLogo } from '../links';
 import { Link } from 'react-router-dom';
 
 function Header() {
   const [inputSearch, setInputSearch] = useState('');
+
   return (
     <div className='header'>
       <div className='header__left'>
         <MenuIcon />
         <Link to='/'>
-          <img className='header__logo' src={headerLogoImage} alt='' />
+          <img
+            className='header__logo'
+            src={headerYouTubeLogo}
+            alt='YouTube Logo'
+          />
         </Link>
       </div>
 
@@ -43,7 +48,7 @@ function Header() {
         <VideoCallIcon className='header__icon' />
         <AppsIcon className='header__icon' />
         <NotificationsIcon className='header__icon' />
-        <Avatar alt='Bozo The Clown' src={headerAvatarImage} />
+        <Avatar className='header__avatar' alt='Bozo Boy' />
       </div>
     </div>
   );

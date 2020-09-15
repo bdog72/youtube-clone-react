@@ -4,12 +4,12 @@
 import React from 'react';
 import './App.css';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
 import Header from './components/Header';
 import RecommendedVideos from './components/RecommendedVideos';
 
 import Sidebar from './components/Sidebar';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import SearchPage from './components/SearchPage';
 
 function App() {
@@ -19,10 +19,12 @@ function App() {
         <Header />
         <Switch>
           <Route path='/search/:searchTerm'>
-            <div className='app__page'>
-              <Sidebar />
-              <SearchPage />
-            </div>
+            <Route path='/'>
+              <div className='app__page'>
+                <Sidebar />
+                <SearchPage />
+              </div>
+            </Route>
           </Route>
           <Route path='/'>
             <div className='app__page'>

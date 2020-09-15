@@ -2,16 +2,18 @@
 //
 
 import React from 'react';
-import '../styles/RecommendedVideos.css';
+// import { videoCardAvatarImage, videoCardChannelImage } from '../links';
 
-import VideoCards from './VideoCards';
+import '../styles/RecommendedVideos.css';
+import VideoCardRepeats from './VideoCardRepeats';
+// import VideoCard from './VideoCard';
 
 function RecommendedVideos() {
   return (
     <div className='recommendedVideos'>
       <h2>Recommended</h2>
       <div className='recommendedVideos__videos'>
-        <VideoCards />
+        <VideoCardRepeats />
       </div>
     </div>
   );

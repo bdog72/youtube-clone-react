@@ -22,12 +22,15 @@
   display: flex;
   align-items: center;
   width: 40%;
-  border: 1px solid lightgray;
+
+  /* flex: 0.4; */
+  border: 1px solid #998383;
 }
 
 .header__input > input {
   padding: 5px;
   flex: 1;
+  border: none !important;
 }
 
 .header__inputButton {
@@ -35,7 +38,6 @@
   background-color: #fafafa;
   border-left: 1px solid lightgray;
   color: gray;
-  cursor: pointer;
 }
 
 .header__icons {
@@ -44,5 +46,5 @@
 }
 
 .header__icon {
-  margin-right: 10px;
+  margin-right: 5px;
 }

@@ -4,18 +4,18 @@
 .videoCard {
   width: 270px;
   margin-bottom: 40px;
+  /* border: 1px solid black; */
 }
 
 .videoCard__thumbnail {
   height: 140px;
   width: 250px;
-  object-fit: contain;
 }
 
 .videoCard__info {
   display: flex;
-  margin-top: 10px;
   padding-right: 30px;
+  margin-top: 10px;
 }
 
 .videoCard__text {
@@ -30,6 +30,7 @@
 .videoCard__text > p {
   font-size: 14px;
   color: gray;
+  font-weight: bold;
 }
 
 .videoCard__avatar {

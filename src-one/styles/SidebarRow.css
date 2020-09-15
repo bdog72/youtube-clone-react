@@ -22,6 +22,7 @@
 .sidebarRow:hover {
   background-color: lightgray;
   cursor: pointer;
+  border-radius: 0 20px 20px 0;
 }
 
 .sidebarRow:hover > .sidebarRow__icon {
@@ -34,6 +35,7 @@
 
 .sidebarRow.selected {
   background-color: lightgray;
+  border-radius: 0 20px 20px 0;
 }
 
 .sidebarRow.selected > .sidebarRow__icon {
